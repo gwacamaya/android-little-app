@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/space"
+        android:id="@+id/main_layout"
+
+        >
+
+    <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:orientation="horizontal"
+            style="@style/items_margin"
+            android:textColor="#FFF"
+            android:id="@+id/t1"
+
+            />
+
+    <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/items_margin"
+            >
+        <TextView
+                android:id="@+id/l1t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="#FFF"
+                />
+        <EditText
+                android:id="@+id/l1et1"
+                style="@style/text_zone"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="15sp"
+                android:textColor="#AAA"
+                android:backgroundTint="#edbaff"
+                android:text="Ms/Mr..."
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/l2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/l2b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onHeureDesCourses"
+                android:text="Heure Courses"/>
+
+        <TextView
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:text="L'heure de faire les courses..."
+                android:textColor="#FFF"
+                android:gravity="right"
+                android:paddingHorizontal="10dp"
+                android:id="@+id/l2t1"
+                />
+    </LinearLayout>
+
+
+    <TimePicker
+            android:id="@+id/simpleTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/timePickerOrange"
+            android:timePickerMode="spinner"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            style="@style/items_margin"
+            android:id="@+id/i1"
+            />
+
+
+    <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onFaireLesCourses"
+            android:text="Faire les courses !"/>
+
+    <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onQuit"
+            android:text="Quitter"/>
+
+</LinearLayout>
