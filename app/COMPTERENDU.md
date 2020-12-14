@@ -1,14 +1,5 @@
-USE
----
-
-Just start the android app intuitively
-If you want to start a server to teste the request feattures, 
-go to the directory "simple-testing-server-master" and follow
-the README.md document. 
-
 LOAIZA ARBELAEZ Jhon Anderson
 ---
-# TD1 Développement Android, INSA CVL
 
 Mon application se compose de trois activités:
 
@@ -55,13 +46,13 @@ main à l'activité 2, en le passant le string login et l'array
 string de la liste d'items.
 La classe utilisé pour faires les requêtes Http est Volley
 
-### FaireCourses.java
+###FaireCourses.java
 Vous verrez La liste des courses disponbiles à acheter
 avec une petitte salutation au login saisi précédemment.
 Veuillez toucher l'item que vous voulez pour passer à l'activité
 suivante puis l'acheter.
 
-### AcheterProduit
+###AcheterProduit
 L'item saisi avant serait affiché et vous aurez deux boutons
 qui vous permettront "d'acheter" le produit. Tout simplement,
 un Toast sera affiché si vous l'achetez ou pas, indiquand l'action
@@ -77,8 +68,11 @@ du type ```TextView``` contient un écouter des événements ```click```.
 Lors d'un click, un nouveau intent est créé et donne la main
 à l'activité 3 en le passant le string de l'item choisi.
 
-## Les actions
+##Les actions
 J'ai appelé le package "actions" juste pour y mettre des classes
 utiles au développement. Là il comporte justement une classe
 ```ToastMsg``` qui permet de génerer des Toasts très facile et rapidement.
    
+
+
+ 
