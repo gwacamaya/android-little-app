@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.helloapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
+            android:usesCleartextTraffic="true"
             android:allowBackup="true"
             android:icon="@mipmap/errors"
             android:label="@string/app_name"
@@ -12,10 +14,14 @@
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".activities.FaireCourses"
+                  android:label="Faire les courses"/>
+        <activity android:name=".activities.AcheterProduit"
+                  android:label="Acheter un produit"/>
     </application>
 
 </manifest>

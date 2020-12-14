@@ -9,7 +9,7 @@
     </style>
 
     <style name="items_margin">
-        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_margin">15dp</item>
     </style>
 
     <style name="text_zone">
@@ -23,4 +23,8 @@
         <item name="android:textSize">22sp</item>
     </style>
 
+    <style name="white">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">22sp</item>
+    </style>
 </resources>

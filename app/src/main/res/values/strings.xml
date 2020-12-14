@@ -3,4 +3,6 @@
     <string name="intro">Hello you!</string>
     <string name="name"> Login</string>
     <string name="et1">Ms/Mr...</string>
+    <string name="default_login">jhon</string>
+    <string name="server">http://192.168.43.78:8000/shopping.json</string>
 </resources>
